@@ -1,0 +1,47 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#menu ul {
+  padding: 0px;
+  margin: 0px;
+  float: left;
+  width: 100%;
+	background-color: #EDEDED;
+	list-style: none;
+	font: 100% Tahoma;
+  position: fixed;
+}
+
+#menu ul li {
+  display: inline;
+}
+
+#menu ul li a {
+  background-color: #EDEDED;
+	color: #333;
+	text-decoration: none;
+	border-bottom: 3px solid #EDEDED;
+	padding: 2% 4%;
+	float: left;
+  transition: 1s;
+}
+
+#menu ul li a:hover {
+	background-color: #D6D6D6;
+	color: #6D6D6D;
+}
+
+#firstimg {
+  width: 100%;
+}
+
+#firstimg img {
+  width: 100%;
+}
+
+#nossacasa {
+  width: 97%;
+}
