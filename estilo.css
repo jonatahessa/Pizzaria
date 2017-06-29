@@ -98,6 +98,18 @@ html, body {
   width: 100%;
   height: auto;
   position: static;
+  transition: 1s;
+  animation-name: exibir;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  display: none;
+}
+
+@keyframes exibir {
+  0% { visibility: hidden; opacity: 0; }
+  25% { visibility: visible; opacity: 1; }
+  75% { visibility: visible; opacity: 1; }
 }
 
 .mostrar table {
@@ -109,8 +121,6 @@ html, body {
 .mostrar table th {
   text-align: left;
 }
-
-
 
 .mostrar button {
   border: none;
@@ -139,10 +149,24 @@ html, body {
   margin: auto;
   left: 0;
   right: 0;
-  position: absolute;
-  display: none;
+  display: block;
+  animation-name: esconder;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  display: block;
+}
+
+@keyframes esconder {
+  0% { visibility: hidden; opacity: 0; }
+  25% { visibility: visible; opacity: 1; }
+  75% { visibility: visible; opacity: 1; }
 }
 
 #sessaocardapio button:hover {
   color: #7f7676;
+}
+
+#sessaodelivery {
+  margin-top: 1%;
 }
